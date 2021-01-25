@@ -19,12 +19,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{asset('validations/bootstrap/dist/css/bootstrap.min.css')}}"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.8.6/css/bootstrap.css" /> -->
     <!-- <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.8.6/css/react-select.css" /> -->
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -98,14 +96,10 @@
             @yield('content')
         </main>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- <script src="https://source.zoom.us/1.7.8/lib/vendor/react.min.js"></script>
-    <script src="https://source.zoom.us/1.7.8/lib/vendor/react-dom.min.js"></script>
-    <script src="https://source.zoom.us/1.7.8/lib/vendor/redux.min.js"></script>
-    <script src="https://source.zoom.us/1.7.8/lib/vendor/redux-thunk.min.js"></script>
-    <script src="https://source.zoom.us/1.7.8/lib/vendor/lodash.min.js"></script> -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
     <script src="https://us05st1.zoom.us/web_client/o3ep7n/js/av-sdk/js_media.min.js"></script>
     <script nonce="9-O-Hm4ASYiQBU8EPp-xKg" type="text/javascript"
         src="https://us05st1.zoom.us/web_client/o3ep7n/js/vendor/react.min.js"></script>
@@ -119,8 +113,7 @@
         src="https://us05st1.zoom.us/web_client/o3ep7n/js/vendor/classnames.min.js"></script>
     <script nonce="9-O-Hm4ASYiQBU8EPp-xKg" type="text/javascript"
         src="https://us05st1.zoom.us/web_client/o3ep7n/js/vendor/lodash.min.js"></script>
-    <!-- import ZoomMtg -->
-    <!-- <script src="https://source.zoom.us/zoom-meeting-1.8.5.min.js"></script> -->
+
     @section('script')
     @show
 </body>

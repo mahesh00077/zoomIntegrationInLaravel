@@ -18,6 +18,7 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+#zoom
 Route::get('create/meeting', 'Admin\ZoomController@index');
 Route::post('create/meeting/add', 'Admin\ZoomController@add');
 Route::get('delete/meeting/{id}', 'Admin\ZoomController@remove');
